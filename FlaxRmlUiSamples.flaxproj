@@ -1,0 +1,31 @@
+{
+	"Name": "FlaxRmlUiSamples",
+	"Version": "1.0",
+	"Company": "My Company",
+	"Copyright": "",
+	"GameTarget": "GameTarget",
+	"EditorTarget": "GameEditorTarget",
+	"References": [
+		{
+			"Name": "$(EnginePath)/Flax.flaxproj"
+		},
+		{
+			"Name": "$(ProjectPath)/Plugins/RmlUi/RmlUi.flaxproj"
+		}
+	],
+	"DefaultScene": "e1b5826b4daf40f4d8d463ad073d6a6e",
+	"DefaultSceneSpawn": {
+		"Position": {
+			"X": 0.0,
+			"Y": 0.0,
+			"Z": 0.0
+		},
+		"Direction": {
+			"X": 0.0,
+			"Y": 0.0,
+			"Z": 1.0
+		}
+	},
+	"MinEngineVersion": "1.6.6343",
+	"EngineNickname": null
+}

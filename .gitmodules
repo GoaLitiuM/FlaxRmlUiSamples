@@ -1,0 +1,3 @@
+[submodule "Plugins/RmlUi"]
+	path = Plugins/RmlUi
+	url = https://github.com/GoaLitiuM/RmlUi.git
