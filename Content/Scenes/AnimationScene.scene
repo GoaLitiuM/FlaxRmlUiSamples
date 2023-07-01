@@ -132,6 +132,11 @@
 			"Document": "e3974b3f40046d7fbb0d74b4eadb63ec",
 			"AutoLoadDocument": false,
 			"AutoFocusDocument": true
+		},
+		{
+			"ID": "5e9f925245503f8c9720948fc51c3486",
+			"TypeName": "Game.AnimationExample",
+			"ParentID": "ecaea94d4da480a72726a8b60f9e8c49"
 		}
 	]
 }
