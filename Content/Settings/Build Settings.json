@@ -1,7 +1,7 @@
 {
 	"ID": "a15f2996487122e4f7499d833d10768d",
 	"TypeName": "FlaxEditor.Content.Settings.BuildSettings",
-	"EngineBuild": 6343,
+	"EngineBuild": 6344,
 	"Data": {
 	"MaxAssetsPerPackage": 4096,
 	"MaxPackageSizeMB": 1024,
@@ -10,7 +10,9 @@
 	"SkipPackaging": false,
 	"AdditionalAssets": null,
 	"AdditionalScenes": null,
-	"AdditionalAssetFolders": null,
+	"AdditionalAssetFolders": [
+		"Content/UI"
+	],
 	"ShadersNoOptimize": false,
 	"ShadersGenerateDebugData": false,
 	"SkipDotnetPackaging": false,

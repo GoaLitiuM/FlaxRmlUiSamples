@@ -1,13 +1,13 @@
 {
 	"ID": "0c0d2e434efef6dbd98fbbb8cd3a39dc",
 	"TypeName": "FlaxEditor.Content.Settings.GameSettings",
-	"EngineBuild": 6343,
+	"EngineBuild": 6344,
 	"Data": {
 	"ProductName": "FlaxRmlUiSamples",
 	"CompanyName": "My Company",
 	"CopyrightNotice": null,
 	"Icon": null,
-	"FirstScene": "00000000000000000000000000000000",
+	"FirstScene": "e1b5826b4daf40f4d8d463ad073d6a6e",
 	"NoSplashScreen": false,
 	"SplashScreen": null,
 	"Time": "6edc88104ff181a9bc05a497c3c766a6",
