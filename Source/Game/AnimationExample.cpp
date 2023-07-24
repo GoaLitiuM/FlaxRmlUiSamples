@@ -8,6 +8,12 @@
 #include <Engine/Platform/Platform.h>
 #include <Engine/Threading/Threading.h>
 
+#if USE_EDITOR
+#include "Editor/Editor.h"
+#endif
+
+// This script is copied and adapted from the RmlUi animation sample.
+
 bool run_loop = true;
 bool single_loop = false;
 int nudge = 0;
@@ -132,6 +138,7 @@ AnimationExample::AnimationExample(const SpawnParams& params)
     : Script(params)
 {
     _tickUpdate = true;
+    _executeInEditor = true;
 	title = "Animation sample";
 }
 
@@ -144,8 +151,15 @@ void AnimationExample::OnEnable()
 		using namespace Rml;
 		using Rml::Transform;
 
-		Rml::ElementDocument* document = Document != nullptr ? Document->GetDocument() : nullptr;
+#if USE_EDITOR
+        if (!Editor::IsPlayMode && _executeInEditor)
+        {
+            Document->Show();
+            return; // Show the document but do not update it in editor
+        }
+#endif
 
+		Rml::ElementDocument* document = Document != nullptr ? Document->GetDocument() : nullptr;
 		document->GetElementById("title")->SetInnerRML(title.ToStringAnsi().Get());
 
 		// Button fun
@@ -209,7 +223,7 @@ void AnimationExample::OnEnable()
 			el->Animate("left", Property(Rml::Math::RandomReal(250.f), Property::PX), 1.5f, Tween{ Tween::Cubic, Tween::InOut });
 		}
 
-		document->Show();
+		Document->Show();
 
 		Rml::Context* context = document->GetContext();
 
@@ -237,6 +251,11 @@ void AnimationExample::OnDisable()
 
 void AnimationExample::OnUpdate()
 {
+#if USE_EDITOR
+    if (!Editor::IsPlayMode && _executeInEditor)
+        return; // Show the document but do not update it in editor
+#endif
+
 	Rml::ElementDocument* document = Document != nullptr ? Document->GetDocument() : nullptr;
 	if (document == nullptr)
 		return;
