@@ -1,0 +1,142 @@
+{
+	"ID": "58a80acd4a40614abe749083592396a6",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6344,
+	"Data": [
+		{
+			"ID": "58a80acd4a40614abe749083592396a6",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 10
+			}
+		},
+		{
+			"ID": "1bcef45d4c8b673db58ed699697c8613",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "58a80acd4a40614abe749083592396a6",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			}
+		},
+		{
+			"ID": "c1b74ddd4669b9d58307ad93759e29a0",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "58a80acd4a40614abe749083592396a6",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "1bcef45d4c8b673db58ed699697c8613"
+		},
+		{
+			"ID": "60c3874d48a956e01f69a99fde625d41",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "58a80acd4a40614abe749083592396a6",
+			"Name": "SkyLight",
+			"Brightness": 2.5,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"ID": "ef8766db445b051a6346dbbc3e823f24",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "58a80acd4a40614abe749083592396a6",
+			"Name": "Floor",
+			"Transform": {
+				"Scale": {
+					"X": 4.0,
+					"Y": 0.5,
+					"Z": 4.0
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "1771b53343d461faacdf2c8581b1fdbb",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "7b98cdc2487619963dc9b4bfbbb55887",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "58a80acd4a40614abe749083592396a6",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": -300.0
+				}
+			}
+		},
+		{
+			"ID": "d3a7b2c34331dc41a3f5af8436deb8ec",
+			"TypeName": "RmlUi.RmlUiCanvas",
+			"ParentID": "58a80acd4a40614abe749083592396a6",
+			"Name": "RmlUiCanvas",
+			"Fonts": [
+				{
+					"Font": "f167ccd644acf1adbe3475a6fb8f92b6",
+					"UseAsFallbackFont": false
+				},
+				{
+					"Font": "ee135021451ebbaa8310e58ea4b11420",
+					"UseAsFallbackFont": false
+				},
+				{
+					"Font": "1e7e00eb4db89ee15f02e2ba7670196a",
+					"UseAsFallbackFont": false
+				},
+				{
+					"Font": "a3b12242421026e51da413b20b4c8a52",
+					"UseAsFallbackFont": false
+				},
+				{
+					"Font": "081c2a424602b6bd0c3186807ff85012",
+					"UseAsFallbackFont": true
+				}
+			],
+			"EnableDebugger": true
+		},
+		{
+			"ID": "0f03a0654fe5b9cdadd5b7bdbd754622",
+			"TypeName": "RmlUi.RmlUiDocument",
+			"ParentID": "d3a7b2c34331dc41a3f5af8436deb8ec",
+			"Name": "RmlUiDocument",
+			"Document": "e3974b3f40046d7fbb0d74b4eadb63ec",
+			"AutoLoadDocument": false
+		},
+		{
+			"ID": "0ba832e447b49484223c3ebe10b2e835",
+			"TypeName": "Game.AnimationExampleCSharp",
+			"ParentID": "0f03a0654fe5b9cdadd5b7bdbd754622",
+			"V": {}
+		}
+	]
+}

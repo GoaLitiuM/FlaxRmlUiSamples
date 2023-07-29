@@ -13,7 +13,7 @@
 			"Name": "$(ProjectPath)/Plugins/RmlUi/RmlUi.flaxproj"
 		}
 	],
-	"DefaultScene": "e1b5826b4daf40f4d8d463ad073d6a6e",
+	"DefaultScene": "58a80acd4a40614abe749083592396a6",
 	"DefaultSceneSpawn": {
 		"Position": {
 			"X": 0.0,

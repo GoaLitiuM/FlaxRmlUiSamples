@@ -45,3 +45,4 @@ _ReSharper*/
 packages/
 Source/Properties/launchSettings.json
 Source/*.Gen.*
+.idea
